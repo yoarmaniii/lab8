@@ -22,13 +22,13 @@ public class lab8 {
 		System.out.println(" 0=out, 1=single, 2=double, 3=triple, 4=HomeRun");
 		System.out.println(" ===============================================");
 		
-		//for each element in the "atBat" array, we are going to use a for loop!
-		for(int i = 0; i < atBat.length; i++){
-			System.out.println("Enter result for number: " + i);
-			i = i++;
+		//for each element in the "atBat" array, we are going to use a for loop
+		//the for loop should calculate how many times the batter went to bat
+		int i = 1;
+		for( i = 1; i <= atBat.length; i++){
+			System.out.println("Enter result for bat number: " + i);
 			input.nextInt();
 			int[] result = new int [choice];
-			
 			
 		}
 		
