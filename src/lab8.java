@@ -7,7 +7,8 @@ public class lab8 {
 		Scanner input = new Scanner(System.in);
 		int choice = 0;
 		int userInput;
-		
+		int totalBases = 0;
+		int average= 0;
 		//enter welcome screen and begin first user input question
 		System.out.println( "Welcome to Battling Average Calculator!");
 		System.out.println( "Enter number of times at bat: ");
@@ -27,11 +28,15 @@ public class lab8 {
 		int i = 1;
 		for( i = 1; i <= atBat.length; i++){
 			System.out.println("Enter result for bat number: " + i);
+			//Save the user input for number of times batting
+			//and also store the number of bases in "i"
+			atBat[i]=input.nextInt();
 			input.nextInt();
-			int[] result = new int [choice];
-			
+				totalBases += atBat[i];
+				average = totalBases/i;
 		}
-		
+			//Get result total for "at bat"
+			//To get average batting percentage, use total/atBats
 			
 			
 		
